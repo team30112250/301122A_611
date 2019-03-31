@@ -1,0 +1,161 @@
+	html, body
+	{
+		height: 100%;
+	}
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #FFFFFF url(images/logoUNAD.png) repeat;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 11pt;
+		font-weight: 400;
+		color: #969696;
+	}	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 900;
+	}
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	p
+	{
+		line-height: 180%;
+	}
+	
+	.container /*Marco de pagina*/
+	{
+		margin: 0px auto;
+		width: 1200px;
+	}
+	
+/*********************************************************************************/
+/* Marco                                                                      */
+/*********************************************************************************/
+	#wrapper
+	{
+		position: relative;
+		padding: 0em 0em 5em 0em;
+		background: #FFF;
+		box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1); /*Sombra de marco*/
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+	#header
+	{
+		height: 10em;
+	}
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+	#logo
+	{
+		margin: 1em auto 1em auto; /* Margen superior del titulo*/
+		text-transform: uppercase; /* Titulo en mayuscula*/
+	}
+	
+	#logo h1
+	{
+		font-size: 2.2em;
+		color: #d4a402; /*Color de fuente del titulo*/
+	}
+	#logo h1 a
+	{
+		margin-left: 0.50em;
+		text-decoration: none;
+		font-size: 1.5em;
+		color: #292929;
+	}
+	
+	#logo span
+	{
+		color: #01A9DC;
+	}
+
+	#logo .icon-size
+	{
+		padding-top: 0.20em;
+		font-size: 2em !important;
+		color: #01A9DC;
+	}
+	
+	#logo p
+	{
+		margin: 0;
+		padding: 0 0 0 5em;
+		letter-spacing: 0.10em;
+		font-size: 0.90em;
+		color: #828282;
+	}
+
+	#logo p a
+	{
+		text-decoration: none;
+		color: #828282;
+	}
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		background: #004080; /*Color de fondo del menu*/
+	}
+	
+	#menu ul
+	{
+		margin: 0;
+		padding: 0px 0px 0px 0px;
+		list-style: none;
+		line-height: normal;
+		text-align: right; /*Alineacion del texto del menu*/
+	}
+	#menu li
+	{
+		display: inline-block;
+	}
+	#menu a
+	{
+		display: block;
+		padding: 0em 2em;
+		line-height: 50px; /* Tamaño de la barra del menu*/
+		letter-spacing: 1px;
+		text-decoration: none; /* decoracion del texto del menu*/ 
+		text-transform: uppercase; /*El texto del menu se muestra en mayuscula*/
+		font-size: 1em;
+		font-weight: 700;
+		color: #d4a402; //* Color de la fuente del menu*/
+	}
+	
+	#menu .current_page_item a
+	{
+		background: #01A9DC;
+		color: #FFF;
+	}
+	#menu a:hover
+	{
+		text-decoration: none; /*decoracion del texto cuando el puntero del mouse se posa encima*/
+		color: #FFF;
+	}
+/* Sub menu */
+li > ul {
+display: none;
+}
+ul li ul li { 
+  background: #FFF; 
+  display: block 	; 
+}
+li:hover ul {display: list-item; margin: inherit; ;position: absolute;;}
+/*li:hover ul li a:link{display: block;margin-left:-30px;}*/

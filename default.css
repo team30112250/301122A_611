@@ -147,7 +147,7 @@
 	#menu a:hover
 	{
 		text-decoration: none; /*decoracion del texto cuando el puntero del mouse se posa encima*/
-		color: #FFF;
+		color: #bbb;
 	}
 /* Sub menu */
 li > ul {

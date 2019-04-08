@@ -1,9 +1,7 @@
-	html, body
-	{
+	html, body{
 		height: 100%;
 	}
-	body
-	{
+	body{
 		margin: 0px;
 		padding: 0px;
 		background: #FFFFFF url(images/logoUNAD.png) repeat;
@@ -12,36 +10,11 @@
 		font-weight: 400;
 		color: #969696;
 	}	
-	h1, h2, h3
-	{
-		margin: 0;
-		padding: 0;
-		font-weight: 900;
-	}
-	p, ol, ul
-	{
-		margin-top: 0;
-	}
-	
-	ol, ul
-	{
-		padding: 0;
-		list-style: none;
-	}
-	p
-	{
-		line-height: 180%;
-	}
-	
-	.container /*Marco de pagina*/
+		.marco /*Marco de pagina*/
 	{
 		margin: 0px auto;
-		width: 1200px;
-	}
-	
-/*********************************************************************************/
-/* Marco                                                                      */
-/*********************************************************************************/
+		width: 1100px; /*Ancho de la pagina*/
+	}	
 	#wrapper
 	{
 		position: relative;
@@ -49,113 +22,71 @@
 		background: #FFF;
 		box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1); /*Sombra de marco*/
 	}
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-	#header
-	{
+	#header{
 		height: 10em;
 	}
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
-	#logo
-	{
+	menu #nav {
+		display: block;
+		position: absolute;
+		width: 80%;
+		background-color: 004080;
+}
+	#logo{
 		margin: 1em auto 1em auto; /* Margen superior del titulo*/
 		text-transform: uppercase; /* Titulo en mayuscula*/
 	}
-	
-	#logo h1
-	{
+	#logo h1{
 		font-size: 2.2em;
 		color: #d4a402; /*Color de fuente del titulo*/
-	}
-	#logo h1 a
-	{
-		margin-left: 0.50em;
-		text-decoration: none;
-		font-size: 1.5em;
-		color: #292929;
-	}
-	
-	#logo span
-	{
-		color: #01A9DC;
-	}
-
-	#logo .icon-size
-	{
-		padding-top: 0.20em;
-		font-size: 2em !important;
-		color: #01A9DC;
-	}
-	
-	#logo p
-	{
-		margin: 0;
-		padding: 0 0 0 5em;
-		letter-spacing: 0.10em;
-		font-size: 0.90em;
-		color: #828282;
-	}
-
-	#logo p a
-	{
-		text-decoration: none;
-		color: #828282;
-	}
-/*********************************************************************************/
-/* Menu                                                                          */
-/*********************************************************************************/
-
-	#menu
-	{
+	}	
+	#menu{
 		background: #004080; /*Color de fondo del menu*/
 	}
-	
-	#menu ul
-	{
+	/*#menu ul{
 		margin: 0;
 		padding: 0px 0px 0px 0px;
 		list-style: none;
 		line-height: normal;
-		text-align: right; /*Alineacion del texto del menu*/
-	}
-	#menu li
-	{
+		text-align: right; /*Alineacion del texto del menu
+	} */
+menu#ul li {
+ color: #fff;
+ float: left;
+ list-style: none;
+ margin: 0% 5%;
+}	
+	
+	#menu li{
 		display: inline-block;
+		margin: auto;
 	}
-	#menu a
-	{
+	#menu a{
 		display: block;
 		padding: 0em 2em;
-		line-height: 50px; /* Tamaño de la barra del menu*/
+		line-height: 45px; /* Tamaño de la barra del menu*/
 		letter-spacing: 1px;
 		text-decoration: none; /* decoracion del texto del menu*/ 
 		text-transform: uppercase; /*El texto del menu se muestra en mayuscula*/
 		font-size: 1em;
-		font-weight: 700;
+		font-weight: 700; /*Grosor del texto*/
 		color: #d4a402; //* Color de la fuente del menu*/
+	}	
+	#menu li ul{
+		display: none;
+		align-content: center;
 	}
-	
-	#menu .current_page_item a
-	{
-		background: #01A9DC;
-		color: #FFF;
-	}
-	#menu a:hover
-	{
-		text-decoration: none; /*decoracion del texto cuando el puntero del mouse se posa encima*/
-		color: #bbb;
-	}
-/* Sub menu */
-li > ul {
-display: none;
+	#menu li:hover ul {
+		display: block; 
+		position: absolute;
+		background: #004080; /*Color bloque submenu*/
+		}
+	main {
+    background-color:#004080;
+    padding:3rem;
+    margin:3rem auto;
+    max-width:800px;
+    display:block;/*para IE*/
+    -webkit-column-count:4;
+    -moz-column-count:4;
+     column-count:4;
 }
-ul li ul li { 
-  background: #FFF; 
-  display: block 	; 
-}
-li:hover ul {display: list-item; margin: inherit; ;position: absolute;;}
-/*li:hover ul li a:link{display: block;margin-left:-30px;}*/

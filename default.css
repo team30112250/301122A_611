@@ -86,7 +86,34 @@ menu#ul li {
     margin:3rem auto;
     max-width:800px;
     display:block;/*para IE*/
-    -webkit-column-count:4;
-    -moz-column-count:4;
-     column-count:4;
+    -webkit-column-count:2;
+    -moz-column-count:2;
+     column-count:2;
+}
+p{
+	text-align: justify;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #004080;
+}
+.redes-sociales {
+	display: block;
+	position: fixed;
+	width: 60%;
+	left: 0;
+	bottom: 0;
+}
+ul.menu-social li a::before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 20px;
+	line-height: 20px;
+}
+ul.menu-social li a[href*="facebook.com"]::before {
+	content: "\f09a";
+}
+ul.menu-social li a[href*="twitter.com"]::before {
+	content: "\f099";
 }
